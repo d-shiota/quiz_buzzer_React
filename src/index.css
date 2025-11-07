@@ -1,0 +1,20 @@
+/* src/index.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* ★ 指摘②：背景を純白に変更 */
+  background-color: #FFFFFF; 
+  font-family: sans-serif;
+}
+
+/* ★ 指摘①：ここで画面全体の上下左右中央に配置します */
+#root {
+  display: flex;
+  justify-content: center; /* 水平中央 */
+  align-items: center;    /* 垂直中央 */
+  min-height: 100vh;      /* 画面の高さいっぱい */
+  width: 100%;
+}

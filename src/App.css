@@ -1,0 +1,67 @@
+/* src/App.css */
+
+.App {
+  text-align: center;
+  width: 90%; 
+  /* ★ ボタン幅を確保するため、コンテナの最大幅を広げます */
+  max-width: 900px; 
+}
+
+.App h1 {
+  font-size: 3.5rem; /* (ここの数字 3.5 をお好みで調整してください) */
+  color: #333; /* 文字の色 (もし変えたければ) */
+}
+
+/* グリッドレイアウト（3列）は前回のまま */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 25px; 
+  margin-top: 25px;
+}
+
+/* 共通ボタンスタイル（サイズや影は前回のまま） */
+.button-container button {
+  padding: 40px 10px; 
+  font-size: 1.5rem;  
+  font-weight: bold;
+  color: #333; 
+  cursor: pointer;
+  border: none;
+  border-radius: 12px; 
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+  /* ★★★ 指摘③：これを追加して文字の改行を防ぎます ★★★ */
+  white-space: nowrap;
+}
+
+/* ホバー・アクティブのスタイル（前回のまま） */
+.button-container button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px); 
+}
+.button-container button:active {
+  transform: translateY(1px); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ★ 色分け（前回のまま変更ありません） */
+.btn-deden {
+  background-color: #f39c12; color: #fff;
+}
+.btn-correct {
+  background-color: #2ecc71; color: #fff;
+}
+.btn-miss {
+  background-color: #e74c3c; color: #fff;
+}
+.btn-nice {
+  background-color: #3498db; color: #fff;
+}
+.btn-warning {
+  background-color: #f1c40f; color: #333;
+}
+.btn-aan {
+  background-color: #9b59b6; color: #fff;
+}
