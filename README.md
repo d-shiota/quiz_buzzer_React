@@ -1,16 +1,40 @@
-# React + Vite
+# クイズブザー React 🔊
+React で作成したシンプルなクイズブザー（効果音ポン出し）アプリです。
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 概要
+6 つのボタンが配置されており、それぞれに対応した効果音（「デデン」「正解」など）を再生することができます。
 
-Currently, two official plugins are available:
+## 開発環境
+開発を始める前に、以下のツールがローカル環境にインストールされていることを確認してください。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Git**
+- **Node.js** (v18.x 以上を推奨)
 
-## React Compiler
+## 開発の始め方
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.  **リポジトリをクローン:**
+```bash
+git clone [https://github.com/d-shiota/quiz_buzzer_React.git](https://github.com/d-shiota/quiz_buzzer_React.git)
+```
 
-## Expanding the ESLint configuration
+2.  **プロジェクトフォルダに移動:**
+```bash
+cd quiz_buzzer_React
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3.  **必要なライブラリ（依存関係）をインストール:**
+```bash
+npm install
+```
+
+4.  **開発サーバーを起動:**
+```bash
+npm run dev
+```
+
+5.  **ブラウザで確認:**
+ターミナルに表示された URL（例: `http://localhost:5173`）にブラウザでアクセスすると、実行中のアプリが表示されます。
+
+## 音声ファイルについて
+使用する音声ファイル（.mp3 など）は `/public` フォルダに格納されています。
+ボタンに対応する音声の変更や追加は、`src/App.jsx` と `/public` フォルダを編集してください。
